@@ -305,14 +305,6 @@
 
   window.addEventListener('load', postHeight);
   window.addEventListener('resize', postHeight);
-
-
-
-    window.addEventListener('message', (event) => {
-    if (event.data?.type === 'set-theme') {
-      document.body.setAttribute('data-theme', event.data.theme);
-    }
-  });
     
     
   </script>
