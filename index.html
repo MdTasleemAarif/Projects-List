@@ -270,6 +270,19 @@
       duration: 1.5,
       ease: "sine.inOut"
     });
+
+    // Astro project script
+    function postHeight() {
+    window.parent.postMessage({
+      type: 'resize-iframe',
+      height: document.body.scrollHeight
+    }, '*');
+  }
+
+  window.addEventListener('load', postHeight);
+  window.addEventListener('resize', postHeight);
+
+    
   </script>
 </body>
 
